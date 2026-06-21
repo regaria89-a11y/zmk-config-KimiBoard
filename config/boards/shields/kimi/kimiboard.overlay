@@ -47,7 +47,7 @@
 		bt0: bt0 {
             compatible = "zmk,behavior-hold-tap";
             label = "BT0";
-            #binding-cells = <0>;
+		    #binding-cells = <2>;
 
             flavor = "tap-preferred";
             tapping-term-ms = <2000>;
@@ -60,7 +60,7 @@
         bt1: bt1 {
             compatible = "zmk,behavior-hold-tap";
             label = "BT1";
-            #binding-cells = <0>;
+		    #binding-cells = <2>;
 
             flavor = "tap-preferred";
             tapping-term-ms = <2000>;
@@ -73,7 +73,7 @@
         bt2: bt2 {
             compatible = "zmk,behavior-hold-tap";
             label = "BT2";
-            #binding-cells = <0>;
+		    #binding-cells = <2>;
 
             flavor = "tap-preferred";
             tapping-term-ms = <2000>;
