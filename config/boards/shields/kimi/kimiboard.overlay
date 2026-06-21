@@ -11,6 +11,8 @@
     };
     aliases {
         led-red = &led0;
+    	led-green = &led1;
+    	led-blue = &led2;
     };
   	macros {
         bt_sel0: bt_sel0 {
