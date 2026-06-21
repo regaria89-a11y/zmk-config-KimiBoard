@@ -5,6 +5,5 @@ include:
     cmake-args: >
       -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_STUDIO_LOCKING=n
       -DZMK_EXTRA_MODULES="$GITHUB_WORKSPACE"
-      -DCONFIG_PMW3610=y
   - board: xiao_ble
     shield: settings_reset
