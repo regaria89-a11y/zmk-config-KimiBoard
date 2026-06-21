@@ -34,15 +34,4 @@
             >;
         };
     };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo_bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 3>;
-            timeout-ms = <50>;
-        };
-    };
-
 };
