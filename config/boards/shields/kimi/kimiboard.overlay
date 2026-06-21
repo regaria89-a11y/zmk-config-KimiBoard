@@ -8,13 +8,78 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
     };
+  	macros {
+        bt_sel0: bt_sel0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>;
+        };
+
+        bt_sel1: bt_sel1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>;
+        };
+
+        bt_sel2: bt_sel2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>;
+        };
+
+		bt_clr: bt_clr {
+    		compatible = "zmk,behavior-macro";
+    		#binding-cells = <0>;
+    		bindings = <&bt BT_CLR>;
+		};
+    };
     behaviors {
+		//コンボタップ(長押しと単押しで切り替える)
         lt_mkp: lt_mkp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&mkp>;
+        };
+		//BT切り替え
+		bt0: bt0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT0";
+            #binding-cells = <0>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+
+            bindings = <&bt_sel0>, <&bt_clr>;
+            hold-trigger-key-positions = <>;
+        };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT1";
+            #binding-cells = <0>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+
+            bindings = <&bt_sel1>, <&bt_clr>;
+            hold-trigger-key-positions = <>;
+        };
+
+        bt2: bt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT2";
+            #binding-cells = <0>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+
+            bindings = <&bt_sel2>, <&bt_clr>;
+            hold-trigger-key-positions = <>;
         };
     };
     physical_layout0: physical_layout_0 {
