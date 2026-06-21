@@ -4,9 +4,13 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/rgbled_widget.dtsi>
 #include <dt-bindings/zmk/kimiboard.h>
+#include <input/processors.dtsi>
 
 &trackball_listener {
-    scroll-layers = <1>;
+    scroller {
+        layers = <1>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
 };
 
 / {
