@@ -9,6 +9,9 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
     };
+    aliases {
+        led_red = &led0;
+    };
   	macros {
         bt_sel0: bt_sel0 {
             compatible = "zmk,behavior-macro";
