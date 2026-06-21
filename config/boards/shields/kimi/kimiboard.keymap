@@ -29,7 +29,7 @@
             bindings = <
                 &trans  &bt0  &bt1  &bt2
             >;
-        }
+        };
     };
 
     combos {
