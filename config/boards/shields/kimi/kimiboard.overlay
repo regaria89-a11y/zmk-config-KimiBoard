@@ -34,6 +34,12 @@
     		bindings = <&bt BT_NXT>;
 		};
 
+		bt_prv: bt_prv {
+    		compatible = "zmk,behavior-macro";
+    		#binding-cells = <0>;
+    		bindings = <&bt BT_PRV>;
+		};
+
 		bt_clr: bt_clr {
     		compatible = "zmk,behavior-macro";
     		#binding-cells = <0>;
@@ -86,10 +92,21 @@
             bindings = <&bt_clr>, <&bt_sel2>;
         };
 
-		
+		btprv: btprv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BTPRV";
+		    #binding-cells = <2>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+
+            bindings = <&bt_clr>, <&bt_prv>;
+        };
+
         btnxt: btnxt {
             compatible = "zmk,behavior-hold-tap";
-            label = "BT2";
+            label = "BTNXT";
 		    #binding-cells = <2>;
 
             flavor = "tap-preferred";

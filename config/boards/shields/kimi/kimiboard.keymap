@@ -15,13 +15,19 @@
 
         default_layer {
             bindings = <
-                &mo 2  &lt_mkp 1 MB3  &mkp LCLK  &mkp RCLK
+                &trans  &lt_mkp 1 MB3  &mkp LCLK  &mkp RCLK
             >;
         };
 
         scroll_layer {
             bindings = <
-                &trans  &trans  &btnxt  &mo 2
+                &trans  &trans  &mo 2  &mo 3
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+                &trans  &btprv  &trans  &btnxt
             >;
         };
 
