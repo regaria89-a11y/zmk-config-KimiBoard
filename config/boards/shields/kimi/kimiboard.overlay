@@ -13,19 +13,19 @@
         bt_sel0: bt_sel0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>;
+            bindings = <&bt BT_SEL 1>;
         };
 
         bt_sel1: bt_sel1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>;
+            bindings = <&bt BT_SEL 2>;
         };
 
         bt_sel2: bt_sel2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>;
+            bindings = <&bt BT_SEL 3>;
         };
 
 		bt_clr: bt_clr {
