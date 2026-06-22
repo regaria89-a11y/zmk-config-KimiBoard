@@ -27,10 +27,10 @@
 
         bt_layer {
             bindings = <
-                &trans
-				&bt BT_NXT
-				&bt BT_PRV
-				&bt BT_CLR_ALL
+				&trans
+				&bt0 0 0
+				&bt1 0 0
+				&bt2 0 0
             >;
         };
     };
