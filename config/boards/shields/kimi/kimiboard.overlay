@@ -54,7 +54,6 @@
             quick-tap-ms = <0>;
 
             bindings = <&bt_sel0>, <&bt_clr>;
-            hold-trigger-key-positions = <>;
         };
 
         bt1: bt1 {
@@ -67,7 +66,6 @@
             quick-tap-ms = <0>;
 
             bindings = <&bt_sel1>, <&bt_clr>;
-            hold-trigger-key-positions = <>;
         };
 
         bt2: bt2 {
@@ -80,7 +78,6 @@
             quick-tap-ms = <0>;
 
             bindings = <&bt_sel2>, <&bt_clr>;
-            hold-trigger-key-positions = <>;
         };
     };
     physical_layout0: physical_layout_0 {
