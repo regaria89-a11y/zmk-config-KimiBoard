@@ -21,16 +21,16 @@
 
         scroll_layer {
             bindings = <
-                &trans  &trans  &tb_rot_ccw  &tb_rot_cw
+                &bt BT_CLR  &trans  &tb_rot_ccw  &tb_rot_cw
             >;
         };
 
         bt_layer {
             bindings = <
 				&trans
-				&bt0 0 0
-				&bt1 0 0
-				&bt2 0 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
             >;
         };
     };
