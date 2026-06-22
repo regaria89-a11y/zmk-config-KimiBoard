@@ -28,6 +28,12 @@
             bindings = <&bt BT_SEL 3>;
         };
 
+		bt_nxt: bt_nxt {
+    		compatible = "zmk,behavior-macro";
+    		#binding-cells = <0>;
+    		bindings = <&bt BT_NXT>;
+		};
+
 		bt_clr: bt_clr {
     		compatible = "zmk,behavior-macro";
     		#binding-cells = <0>;
@@ -78,6 +84,19 @@
             quick-tap-ms = <0>;
 
             bindings = <&bt_clr>, <&bt_sel2>;
+        };
+
+		
+        btnxt: btnxt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT2";
+		    #binding-cells = <2>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <0>;
+
+            bindings = <&bt_clr>, <&bt_nxt>;
         };
     };
     physical_layout0: physical_layout_0 {
