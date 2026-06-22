@@ -30,7 +30,7 @@
                 &trans
 				&bt BT_NXT
 				&bt BT_PRV
-				&bt BT_CLR
+				&bt BT_CLR_ALL
             >;
         };
     };
