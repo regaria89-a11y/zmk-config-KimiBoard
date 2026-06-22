@@ -27,7 +27,7 @@
 
 		scroll_setting_layer {
             bindings = <
-                &trans  tb_rot_ccw  &tb_rot_cw  &trans
+                &trans  &tb_rot_ccw  &tb_rot_cw  &trans
             >;
         };
     };
